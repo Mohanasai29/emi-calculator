@@ -1,37 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>EMI Calculator – Online Loan & EMI Calculator</title>
-<meta name="description" content="Free EMI Calculator – Calculate monthly EMI, total interest & total payment for loans including mobiles, bikes, cars & home loans.">
-<meta name="keywords" content="EMI calculator, loan EMI, online EMI calculator, finance, loan calculator">
-<meta name="author" content="Mohana Sai">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <title>EMI Calculator – Online Loan & EMI Calculator</title>
+
+    <meta name="description" content="Free EMI Calculator to calculate monthly EMI, total interest and total payable amount for loans including mobiles, bikes, cars and home loans.">
+
+    <meta name="keywords" content="EMI calculator, loan EMI calculator, online EMI calculator, finance calculator, loan calculator India">
+
+    <meta name="author" content="Mohana Sai">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph (for sharing) -->
+    <meta property="og:title" content="EMI Calculator – Online Loan EMI Calculator">
+    <meta property="og:description" content="Calculate EMI easily for mobile, bike, car and home loans.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mohanasai29.github.io/emi-calculator/">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
-    <h2>EMI Calculator</h2>
+<main class="container">
+    <h1>EMI Calculator</h1>
 
-    <label>Product Price (₹)</label>
+    <p style="text-align:center; font-size:14px; margin-bottom:15px;">
+        Calculate your monthly EMI, total interest, and total loan payment easily.
+    </p>
+
+    <label for="price">Product Price (₹)</label>
     <input type="number" id="price" placeholder="e.g. 50000">
 
-    <label>Down Payment (₹)</label>
+    <label for="downPayment">Down Payment (₹)</label>
     <input type="number" id="downPayment" placeholder="e.g. 5000">
 
-    <label>Annual Interest Rate (%)</label>
+    <label for="rate">Annual Interest Rate (%)</label>
     <input type="number" id="rate" placeholder="e.g. 12">
 
-    <label>Tenure (Months)</label>
+    <label for="tenure">Tenure (Months)</label>
     <input type="number" id="tenure" placeholder="e.g. 12" min="1" max="360">
 
     <button onclick="calculateEMI()">Calculate EMI</button>
 
     <div class="result" id="result"></div>
-</div>
+
+    <!-- SEO CONTENT -->
+    <section style="margin-top:25px; font-size:14px;">
+        <h2>What is EMI?</h2>
+        <p>
+            EMI (Equated Monthly Installment) is the fixed monthly payment made by a borrower to repay a loan.
+            It includes both principal and interest.
+        </p>
+
+        <h2>How does this EMI Calculator work?</h2>
+        <p>
+            This EMI calculator uses the reducing balance method to calculate accurate monthly EMIs based on
+            loan amount, interest rate and tenure.
+        </p>
+    </section>
+</main>
 
 <script src="script.js"></script>
+
 </body>
 </html>
-
