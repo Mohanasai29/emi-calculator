@@ -24,12 +24,20 @@
 
 <body>
 
+<header class="siteheader">
+    <div class="headercontent">
+
+        <div class="brand">
+          
+           <span class="brandname">Emi Calculator Web Application</span>
+        </div>
+
+       
+
+    </div>
+</header>
 <main class="container">
     <h1>EMI Calculator</h1>
-
-    <p style="text-align:center; font-size:14px; margin-bottom:15px;">
-        Calculate your monthly EMI, total interest, and total loan payment easily.
-    </p>
 
     <label for="price">Product Price (₹)</label>
     <input type="number" id="price" placeholder="e.g. 50000">
@@ -41,17 +49,20 @@
     <input type="number" id="rate" placeholder="e.g. 12">
 
     <label for="tenure">Tenure (Months)</label>
-    <input type="number" id="tenure" placeholder="e.g. 12" min="1" max="360">
-
-    <button onclick="calculateEMI()">Calculate EMI</button>
-
-    <div class="result" id="result"></div>
+    <input type="number" id="tenure" placeholder="e.g. 12">
+<div class="button-group">
+    <button class="btn-calc" onclick="calculateEMI()">Calculate EMI</button>
+    <button class="btn-reset" onclick="resetForm()">Clear Values</button>
+</div>
 
    
+
+    <div class="result" id="result"></div>
 </main>
+<footer class="sitefooter">
+    <p>© 2026 Thome Fintech. All rights reserved.</p>
+</footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
-
